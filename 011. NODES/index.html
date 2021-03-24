@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript HTML DOM Elements (Nodes)</title>
+</head>
+<body>
+      <h1>JavaScript HTML DOM Elements (Nodes)</h1>
+
+      <!-- <h2>Creating New HTML Elements (Nodes)</h2> -->
+        
+        <!-- <div id="div1">
+          <p id="p1">This is a paragraph.</p>
+          <p id="p2">This is another paragraph.</p>
+        </div>
+
+        <script>
+          var para = document.createElement("p");
+          var node = document.createTextNode("This is new.");
+          para.appendChild(node);
+          var element = document.getElementById("div1");
+          element.appendChild(para);
+        </script> -->
+
+      <!-- <h2>Creating new HTML Elements - insertBefore()</h2> -->
+
+        <!-- <div id="div1">
+          <p id="p1">This is a paragraph.</p>
+          <p id="p2">This is another paragraph.</p>
+        </div>
+
+        <script>
+          var para = document.createElement("p");
+          var node = document.createTextNode("This is new.");
+          para.appendChild(node);
+
+          var element = document.getElementById("div1");
+          var child = document.getElementById("p1");
+          element.insertBefore(para, child);
+        </script> -->
+
+      <!-- <h2>Removing Existing HTML Elements</h2> -->
+
+        <!-- <div>
+          <p id="p1">This is a paragraph</p>
+          <p id="p2">This is another paragraph.</p>
+        </div> 
+
+        <button onclick="myFunction()">Remove Element</button>
+
+        <script>
+          function myFunction(){
+            var elmnt = document.getElementById("p1");
+            elmnt.remove();
+          }
+        </script> -->
+
+      <!-- <h2>Example Explained</h2> -->
+
+      <!-- <h2>Removing a Child Node</h2>
+
+        <div id="div1">
+          <p id="p1">This is a paragraph</p>
+          <p id="p2">This is another paragraph</p>
+        </div>
+
+        <script>
+          var parent = document.getElementById("div1");
+          var child = document.getElementById("p1");
+          parent.removeChild(child);
+        </script> -->
+
+      <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+      </div>
+
+      <script>
+        var parent = document.getElementById("div");
+        var child = document.getElementById("p1");
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new");
+        para.appendChild(node);
+        parent.replaceChild(para, child);
+      </script>
+
+
+
+      
+
+
+
+
+  
+</body>
+</html>
